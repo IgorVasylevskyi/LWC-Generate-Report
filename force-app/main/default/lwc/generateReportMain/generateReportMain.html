@@ -1,0 +1,12 @@
+<template>
+    <template if:true={oppHasNumber}>
+        <c-generate-report record-id={recordId} onclose={closeQuickAction}></c-generate-report>
+    </template> 
+    <template if:false={oppHasNumber}>
+        <c-fill-number-inside-acc record-id={recordId} 
+                                    sobject-name={sobjectName} 
+                                    onnumberadded={numberAdded} 
+                                    onclose={closeQuickAction}>
+        </c-fill-number-inside-acc>
+    </template>
+</template>

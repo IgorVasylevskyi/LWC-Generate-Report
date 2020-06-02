@@ -1,0 +1,8 @@
+<template>
+    <lightning-radio-group label='Choose report type' options={options} type='radio'></lightning-radio-group>
+    
+    <div class="slds-float_right slds-m-around_small">
+        <lightning-button variant='brand-outline' onclick={closeQuickAction} label='Cancel'></lightning-button>
+        <lightning-button variant='brand' onclick={generateReport} label='Generate Report' class="slds-m-left_small"></lightning-button>
+    </div>
+</template>
